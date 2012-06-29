@@ -13,7 +13,7 @@ Summary:	Calligra suite - international support
 Summary(pl.UTF-8):	Calligra - wsparcie dla wielu języków
 Name:		kde4-calligra-l10n
 Version:	2.4.2
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		I18n
 Source0:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-ca-%{version}.tar.bz2
@@ -75,6 +75,11 @@ BuildRequires:	libxml2-progs
 BuildRequires:	qt4-build
 BuildRequires:	qt4-qmake
 BuildRequires:	rpmbuild(macros) >= 1.600
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n
+Obsoletes:	kde4-koffice-l10n-Frisian
+Obsoletes:	kde4-koffice-l10n-Galician
+Obsoletes:	kde4-koffice-l10n-Japanese
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -88,6 +93,8 @@ Calligra - wsparcie dla wielu języków.
 Summary:	Calligra suite - Catalan language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka katalońskiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n-Catalan
 
 %description Catalan
 Calligra suite - Catalan language support.
@@ -99,6 +106,7 @@ Calligra - wsparcie dla języka katalońskiego.
 Summary:	Calligra suite - Catalan Valencian language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka walenckiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
 
 %description Catalan_Valencian
 Calligra suite - Catalan Valencian language support.
@@ -110,6 +118,7 @@ Calligra - wsparcie dla języka walenckiego.
 Summary:	Calligra suite - Czech language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka czeskiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
 
 %description Czech
 Calligra suite - Czech language support.
@@ -121,6 +130,8 @@ Calligra - wsparcie dla języka czeskiego.
 Summary:	Calligra suite - Danish language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka duńskiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n-Danish
 
 %description Danish
 Calligra suite - Danish language support.
@@ -132,6 +143,8 @@ Calligra - wsparcie dla języka duńskiego.
 Summary:	Calligra suite - German language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka niemieckiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n-German
 
 %description German
 Calligra suite - German language support.
@@ -143,6 +156,8 @@ Calligra - wsparcie dla języka niemieckiego.
 Summary:	Calligra suite - Greek language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka greckiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n-Greek
 
 %description Greek
 Calligra suite - Greek language support.
@@ -154,6 +169,8 @@ Calligra - wsparcie dla języka greckiego.
 Summary:	Calligra suite - Kazakh language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka kazachskiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n-Kazakh
 
 %description Kazakh
 Calligra suite - Kazakh language support.
@@ -165,6 +182,8 @@ Calligra - wsparcie dla języka kazachskiego.
 Summary:	Calligra suite - Calligra suite - English (UK) language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka angielskiego (odmiany brytyjskiej)
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n-English_UK
 
 %description English_UK
 Calligra suite - English (UK) language support.
@@ -176,6 +195,8 @@ Calligra - wsparcie dla języka angielskiego (odmiany brytyjskiej).
 Summary:	Calligra suite - Spanish language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka hiszpańskiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n-Spanish
 
 %description Spanish
 Calligra suite - Spanish language support.
@@ -187,6 +208,8 @@ Calligra - wsparcie dla języka hiszpańskiego.
 Summary:	Calligra suite - Estonian language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka estońskiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n-Estonian
 
 %description Estonian
 Calligra suite - Estonian language support.
@@ -198,6 +221,8 @@ Calligra - wsparcie dla języka estońskiego.
 Summary:	Calligra suite - French language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka francuskiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n-French
 
 %description French
 Calligra suite - French language support.
@@ -209,6 +234,7 @@ Calligra - wsparcie dla języka francuskiego.
 Summary:	Calligra suite - Finnish language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka fińskiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
 
 %description Finnish
 Calligra suite - Finnish language support.
@@ -220,6 +246,8 @@ Calligra - wsparcie dla języka fińskiego.
 Summary:	Calligra suite - Italian language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka włoskiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n-Italian
 
 %description Italian
 Calligra suite - Italian language support.
@@ -231,6 +259,7 @@ Calligra - wsparcie dla języka włoskiego.
 Summary:	Calligra suite - Hungarian language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka węgierskiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
 
 %description Hungarian
 Calligra suite - Hungarian language support.
@@ -242,6 +271,8 @@ Calligra - wsparcie dla języka węgierskiego.
 Summary:	Calligra suite - Low Saxon language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka dolnosaksońskiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n-Low_Saxon
 
 %description Low_Saxon
 Calligra suite - Low Saxon language support.
@@ -253,6 +284,8 @@ Calligra - wsparcie dla języka dolnosaksońskiego.
 Summary:	Calligra suite - Norwegian (Bokmaal) language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka norweskiego (odmiany bokmaal)
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n-Norwegian_Bokmaal
 
 %description Norwegian_Bokmaal
 Calligra suite - Norwegian (Bokmaal) language support.
@@ -264,6 +297,8 @@ Calligra - wsparcie dla języka norweskiego (odmiany bokmaal).
 Summary:	Calligra suite - Dutch language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka holenderskiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n-Dutch
 
 %description Dutch
 Calligra suite - Dutch language support.
@@ -275,6 +310,8 @@ Calligra - wsparcie dla języka holenderskiego.
 Summary:	Calligra suite - Polish language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka polskiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n-Polish
 
 %description Polish
 Calligra suite - Polish language support.
@@ -286,6 +323,8 @@ Calligra - wsparcie dla języka polskiego.
 Summary:	Calligra suite - Portuguese language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka portugalskiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n-Portuguese
 
 %description Portuguese
 Calligra suite - Portuguese language support.
@@ -297,6 +336,8 @@ Calligra - wsparcie dla języka portugalskiego.
 Summary:	Calligra suite - Portuguese (Brazil) language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka portugalskiego (odmiany brazylijskiej)
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n-Brazil_Portuguese
 
 %description Brazil_Portuguese
 Calligra suite - Portuguese (Brazil) language support.
@@ -308,6 +349,7 @@ Calligra - wsparcie dla języka portugalskiego (odmiany brazylijskiej).
 Summary:	Calligra suite - Slovak language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka słowackiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
 
 %description Slovak
 Calligra suite - Slovak language support.
@@ -319,6 +361,8 @@ Calligra - wsparcie dla języka słowackiego.
 Summary:	Calligra suite - Swedish language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka szwedzkiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n-Swedish
 
 %description Swedish
 Calligra suite - Swedish language support.
@@ -330,6 +374,7 @@ Calligra - wsparcie dla języka szwedzkiego.
 Summary:	Calligra suite - Russian language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka rosyjskiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
 
 %description Russian
 Calligra suite - Russian language support.
@@ -341,6 +386,8 @@ Calligra - wsparcie dla języka rosyjskiego.
 Summary:	Calligra suite - Turkish language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka tureckiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n-Turkish
 
 %description Turkish
 Calligra suite - Turkish language support.
@@ -352,6 +399,8 @@ Calligra - wsparcie dla języka tureckiego.
 Summary:	Calligra suite - Ukrainian language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka ukraińskiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n-Ukrainian
 
 %description Ukrainian
 Calligra suite - Ukrainian language support.
@@ -363,6 +412,8 @@ Calligra - wsparcie dla języka ukraińskiego.
 Summary:	Calligra suite - Walloon language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka walońskiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n-Walloon
 
 %description Walloon
 Calligra suite - Walloon language support.
@@ -374,6 +425,8 @@ Calligra - wsparcie dla języka walońskiego.
 Summary:	Calligra suite - simplified Chinese language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla uproszczonego języka chińskiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n-Simplified_Chinese
 
 %description Simplified_Chinese
 Calligra suite - simplified Chinese language support.
@@ -385,6 +438,8 @@ Calligra - wsparcie dla uproszczonego języka chińskiego.
 Summary:	Calligra suite - Chinese language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka chińskiego
 Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+Obsoletes:	kde4-koffice-l10n-Chinese
 
 %description Chinese
 Calligra suite - Chinese language support.
