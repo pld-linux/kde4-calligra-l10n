@@ -7,13 +7,13 @@
 #
 
 %define		orgname		calligra-l10n
-%define		kdever		4.8.0
+%define		kdever		4.9.0
 
 Summary:	Calligra suite - international support
 Summary(pl.UTF-8):	Calligra - wsparcie dla wielu języków
 Name:		kde4-calligra-l10n
 Version:	2.5.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		I18n
 Source0:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-ca-%{version}.tar.bz2
@@ -478,7 +478,7 @@ Calligra suite - Chinese language support.
 Calligra - wsparcie dla języka chińskiego.
 
 %prep
-%setup -q -c -T %(seq -f '-a %g' 0 26 |sed -e 's/-a 15//;/^$/d' | xargs)
+%setup -q -c -T %(seq -f '-a %g' 0 26 | xargs)
 
 %build
 for dir in calligra-l10n-*-%{version}; do
@@ -598,8 +598,8 @@ check_installed_files
 %files -f Catalan_Valencian.lang Catalan_Valencian
 %defattr(644,root,root,755)
 
-%files -f Czech.lang Czech
-%defattr(644,root,root,755)
+#%files -f Czech.lang Czech
+#%defattr(644,root,root,755)
 
 %files -f Danish.lang Danish
 %defattr(644,root,root,755)
