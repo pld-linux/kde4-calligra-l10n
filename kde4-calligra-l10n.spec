@@ -13,7 +13,7 @@ Summary:	Calligra suite - international support
 Summary(pl.UTF-8):	Calligra - wsparcie dla wielu języków
 Name:		kde4-calligra-l10n
 Version:	2.5.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		I18n
 Source0:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-ca-%{version}.tar.bz2
@@ -533,7 +533,7 @@ FindLang() {
 
 FindLang ca > Catalan.lang
 FindLang ca@valencia > Catalan_Valencian.lang
-FindLang cs > Czech.lang
+#FindLang cs > Czech.lang
 FindLang da > Danish.lang
 FindLang de > German.lang
 FindLang el > Greek.lang
