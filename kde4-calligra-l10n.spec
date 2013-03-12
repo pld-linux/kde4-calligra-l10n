@@ -527,8 +527,6 @@ FindLang() {
 	touch $lang.ok
 }
 
-%{__rm} -r $RPM_BUILD_ROOT%{_datadir}/apps/koffice
-
 FindLang ca > Catalan.lang
 #FindLang ca@valencia > Catalan_Valencian.lang
 #FindLang cs > Czech.lang
