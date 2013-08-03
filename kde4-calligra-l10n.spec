@@ -1,71 +1,79 @@
 # NOTE
 # - easy way to update all sources with new/old locales:
-#   lynx -dump ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n | awk '/.tar.bz2$/{printf("Source%d: %s\n", i++, $2)}' | tee out
+#   lynx -dump ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n | awk '/.tar.xz$/{printf("Source%d: %s\n", i++, $2)}' | tee out
 #   and then ':r out' in vim and ./builder -a5 the spec
 #   and ':%s#calligra-1.6.3#calligra-%{version}#g'
 # - ISO 639-1 language codes maybe be looked up from http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 #
 
 %define		orgname		calligra-l10n
-%define		kdever		4.9.0
+%define		kdever		4.10.0
 
 Summary:	Calligra suite - international support
 Summary(pl.UTF-8):	Calligra - wsparcie dla wielu języków
 Name:		kde4-calligra-l10n
-Version:	2.6.3
+Version:	2.7.1
 Release:	1
 License:	GPL
 Group:		I18n
-Source0:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-ca-%{version}.tar.bz2
-# Source0-md5:	ac6933d11db5c527a50bb6b51a249b30
-Source1:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-da-%{version}.tar.bz2
-# Source1-md5:	21e42139215c8f9a3c6ad4eb17808d46
-Source2:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-de-%{version}.tar.bz2
-# Source2-md5:	70bf383f0ba4b938ddd617f2f6652d1e
-Source3:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-el-%{version}.tar.bz2
-# Source3-md5:	e104c34a00347ab0d5f5dc0dad709853
-Source4:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-en_GB-%{version}.tar.bz2
-# Source4-md5:	a2490066102e8c0acd78aee74069c143
-Source5:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-es-%{version}.tar.bz2
-# Source5-md5:	24c69b328dd9f8b4c0527b3f4cc938f0
-Source6:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-et-%{version}.tar.bz2
-# Source6-md5:	e744e9699cb37806b5d3cbaaa4ba393f
-Source7:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-fi-%{version}.tar.bz2
-# Source7-md5:	fabbf2464086e3fceb98355ff438ff5f
-Source8:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-fr-%{version}.tar.bz2
-# Source8-md5:	0bd7585c203795b15b506d0d823e78e0
-Source9:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-gl-%{version}.tar.bz2
-# Source9-md5:	a8763794416fe04aed42c4475a8f3fe5
-Source10:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-hu-%{version}.tar.bz2
-# Source10-md5:	122de5839554f8d08262a04e8900b01b
-Source11:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-it-%{version}.tar.bz2
-# Source11-md5:	4d0abccb21f1413607d0a28b86934075
-Source12:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-kk-%{version}.tar.bz2
-# Source12-md5:	41387a63777b86c50d87f310774436c8
-Source13:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-nb-%{version}.tar.bz2
-# Source13-md5:	5bddc85aee9beabc7b1348ab313acbbb
-Source14:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-nds-%{version}.tar.bz2
-# Source14-md5:	12489c8d21332a65b1744a3ae08de218
-Source15:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-nl-%{version}.tar.bz2
-# Source15-md5:	bf3cc8e28065957212fd106fa395a4c8
-Source16:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-pl-%{version}.tar.bz2
-# Source16-md5:	3364250fd4fde92c8a9568ae145f8682
-Source17:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-pt-%{version}.tar.bz2
-# Source17-md5:	f2dc15ec51a6737c702f90d1da9a5375
-Source18:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-pt_BR-%{version}.tar.bz2
-# Source18-md5:	7bc5c334e10b2353532548dc79854643
-Source19:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-ru-%{version}.tar.bz2
-# Source19-md5:	6d296dab1e04d4efcf07807899911fc1
-Source20:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-sk-%{version}.tar.bz2
-# Source20-md5:	3053eaca25a9cbb777bb7bd16fd140c1
-Source21:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-sv-%{version}.tar.bz2
-# Source21-md5:	078dd183beae03cc0e5fbdb88a62fb20
-Source22:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-uk-%{version}.tar.bz2
-# Source22-md5:	3defbdcdd67a3c256b51d0f1b1d3711b
-Source23:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-zh_CN-%{version}.tar.bz2
-# Source23-md5:	051833f7fa20c25bf206b1f23071b6ed
-Source24:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-zh_TW-%{version}.tar.bz2
-# Source24-md5:	03df7c5a5a266435f3a9bc715a33339d
+Source0:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-bs-%{version}.tar.xz
+# Source0-md5:	329bace77407d2aa4260e72625bb05f3
+Source1:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-ca-%{version}.tar.xz
+# Source1-md5:	fd08f80d572b7aad30e27e460986bcbe
+Source2:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-ca@valencia-%{version}.tar.xz
+# Source2-md5:	7bdc5b166a0609194b1d48ed413d3df0
+Source3:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-cs-%{version}.tar.xz
+# Source3-md5:	9fb58bb6e88911f7b5b78f56dbf0ab90
+Source4:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-da-%{version}.tar.xz
+# Source4-md5:	40b09095a141b2a2b796729b9b69cd86
+Source5:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-de-%{version}.tar.xz
+# Source5-md5:	ea603dd4b7d907aad698fde4b86d8548
+Source6:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-el-%{version}.tar.xz
+# Source6-md5:	390a9f0551b4f666435020b7f9fa5d97
+Source7:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-es-%{version}.tar.xz
+# Source7-md5:	53dac459d7b5009756235f01152c7c90
+Source8:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-et-%{version}.tar.xz
+# Source8-md5:	f57f226915d0d63b742f8fd675be5743
+Source9:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-fi-%{version}.tar.xz
+# Source9-md5:	59a5a7e38c25408db8535634ef6bd8b4
+Source10:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-fr-%{version}.tar.xz
+# Source10-md5:	efc3833d62dee2aa60ebc98dafeab2e2
+Source11:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-gl-%{version}.tar.xz
+# Source11-md5:	e4499cf8bf66f7e1b6940ba05db6f3b4
+Source12:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-hu-%{version}.tar.xz
+# Source12-md5:	d5425ba2a2608171f15216b0ad195141
+Source13:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-it-%{version}.tar.xz
+# Source13-md5:	d99495dca290aeb2c8ba32dcbf8020b7
+Source14:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-kk-%{version}.tar.xz
+# Source14-md5:	bc1efa2ca0c79b0cde69cdc7d564a195
+Source15:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-nb-%{version}.tar.xz
+# Source15-md5:	0f0357c2a3ca6b1ca776d5af7413ab59
+Source16:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-nds-%{version}.tar.xz
+# Source16-md5:	0c4a812b4dde531b3756529526ec3011
+Source17:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-nl-%{version}.tar.xz
+# Source17-md5:	b946f2342eae0fc230210e5e2996838b
+Source18:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-pl-%{version}.tar.xz
+# Source18-md5:	d9525bc2bf4a50dcc931ecfaee212c17
+Source19:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-pt-%{version}.tar.xz
+# Source19-md5:	6ebeaf278ec07b0271fbbe85d9a51146
+Source20:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-pt_BR-%{version}.tar.xz
+# Source20-md5:	38f42619c9da5be4adcc95249dc3bf23
+Source21:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-ru-%{version}.tar.xz
+# Source21-md5:	de96d3a0f574f13d3e9ae591058c79cb
+Source22:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-sk-%{version}.tar.xz
+# Source22-md5:	06e3f446884285c6709a0d9909fcfc3e
+Source23:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-sl-%{version}.tar.xz
+# Source23-md5:	666b762a9f65153cee5aaff4299bc3b2
+Source24:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-sv-%{version}.tar.xz
+# Source24-md5:	d27384b167790c3ec4e35473d69b96b1
+Source25:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-tr-%{version}.tar.xz
+# Source25-md5:	a44310f6b7bef020a7383ae36da1bb49
+Source26:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-uk-%{version}.tar.xz
+# Source26-md5:	adbb251c373a507fa83bafe200c2937a
+Source27:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-zh_CN-%{version}.tar.xz
+# Source27-md5:	876081f523b7345ce60808345e6e619b
+Source28:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-zh_TW-%{version}.tar.xz
+# Source28-md5:	2acc0dae80a2bf5404ffa6e040afebdc
 BuildRequires:	automoc4
 BuildRequires:	cmake >= 2.8.0
 BuildRequires:	docbook-dtd42-xml
@@ -76,8 +84,7 @@ BuildRequires:	qt4-build
 BuildRequires:	qt4-qmake
 BuildRequires:	rpmbuild(macros) >= 1.600
 Requires:	kde4-calligra-common = %{version}
-Obsoletes:	kde4-calligra-l10n-Czech < %{version}-%{release}
-Obsoletes:	kde4-calligra-l10n-Catalan_Valencian < %{version}-%{release}
+Obsoletes:	kde4-calligra-l10n-English_UK < %{version}-%{release}
 Obsoletes:	kde4-calligra-l10n-Japanese < %{version}-%{release}
 Obsoletes:	kde4-koffice-l10n
 Obsoletes:	kde4-koffice-l10n-Frisian
@@ -89,6 +96,18 @@ Calligra suite - international support.
 
 %description -l pl.UTF-8
 Calligra - wsparcie dla wielu języków.
+
+%package Bosnian
+Summary:	Calligra suite - Bosnian language support
+Summary(pl.UTF-8):	Calligra - wsparcie dla języka bośniackiego
+Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+
+%description Bosnian
+Calligra suite - Bosnian language support.
+
+%description Bosnian -l pl.UTF-8
+Calligra - wsparcie dla języka bośniackiego.
 
 %package Catalan
 Summary:	Calligra suite - Catalan language support
@@ -385,6 +404,18 @@ Calligra suite - Slovak language support.
 %description Slovak -l pl.UTF-8
 Calligra - wsparcie dla języka słowackiego.
 
+%package Slovenian
+Summary:	Calligra suite - Slovenian language support
+Summary(pl.UTF-8):	Calligra - wsparcie dla języka słoweńskiego
+Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+
+%description Slovenian
+Calligra suite - Slovenian language support.
+
+%description Slovenian -l pl.UTF-8
+Calligra - wsparcie dla języka słoweńskiego.
+
 %package Swedish
 Summary:	Calligra suite - Swedish language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka szwedzkiego
@@ -397,6 +428,18 @@ Calligra suite - Swedish language support.
 
 %description Swedish -l pl.UTF-8
 Calligra - wsparcie dla języka szwedzkiego.
+
+%package Turkish
+Summary:	Calligra suite - Turkish language support
+Summary(pl.UTF-8):	Calligra - wsparcie dla języka tureckiego
+Group:		I18n
+Requires:	kde4-calligra-common = %{version}
+
+%description Turkish
+Calligra suite - Turkish language support.
+
+%description Turkish -l pl.UTF-8
+Calligra - wsparcie dla języka tureckiego.
 
 %package Russian
 Summary:	Calligra suite - Russian language support
@@ -476,7 +519,7 @@ Calligra suite - Chinese language support.
 Calligra - wsparcie dla języka chińskiego.
 
 %prep
-%setup -q -c -T %(seq -f '-a %g' 0 24 | xargs)
+%setup -q -c -T %(seq -f '-a %g' 0 28 | xargs)
 
 %build
 for dir in calligra-l10n-*-%{version}; do
@@ -527,13 +570,14 @@ FindLang() {
 	touch $lang.ok
 }
 
+FindLang bs > Bosnian.lang
 FindLang ca > Catalan.lang
-#FindLang ca@valencia > Catalan_Valencian.lang
-#FindLang cs > Czech.lang
+FindLang ca@valencia > Catalan_Valencian.lang
+FindLang cs > Czech.lang
 FindLang da > Danish.lang
 FindLang de > German.lang
 FindLang el > Greek.lang
-FindLang en_GB > English_UK.lang
+#FindLang en_GB > English_UK.lang
 FindLang es > Spanish.lang
 FindLang et > Estonian.lang
 FindLang fi > Finnish.lang
@@ -551,7 +595,9 @@ FindLang pt > Portuguese.lang
 FindLang pt_BR > Brazil_Portuguese.lang
 FindLang ru > Russian.lang
 FindLang sk > Slovak.lang
+FindLang sl > Slovenian.lang
 FindLang sv > Swedish.lang
+FindLang tr > Turkish.lang
 FindLang uk > Ukrainian.lang
 FindLang zh_CN > Simplified_Chinese.lang
 FindLang zh_TW > Chinese.lang
@@ -588,14 +634,20 @@ check_installed_files() {
 check_installed_files
 %{!?debug:rm -rf $RPM_BUILD_ROOT}
 
+%files
+%defattr(644,root,root,755)
+
+%files -f Bosnian.lang Bosnian
+%defattr(644,root,root,755)
+
 %files -f Catalan.lang Catalan
 %defattr(644,root,root,755)
 
-#%files -f Catalan_Valencian.lang Catalan_Valencian
-#%defattr(644,root,root,755)
+%files -f Catalan_Valencian.lang Catalan_Valencian
+%defattr(644,root,root,755)
 
-#%files -f Czech.lang Czech
-#%defattr(644,root,root,755)
+%files -f Czech.lang Czech
+%defattr(644,root,root,755)
 
 %files -f Danish.lang Danish
 %defattr(644,root,root,755)
@@ -606,8 +658,8 @@ check_installed_files
 %files -f Greek.lang Greek
 %defattr(644,root,root,755)
 
-%files -f English_UK.lang English_UK
-%defattr(644,root,root,755)
+#%files -f English_UK.lang English_UK
+#%defattr(644,root,root,755)
 
 %files -f Spanish.lang Spanish
 %defattr(644,root,root,755)
@@ -660,7 +712,13 @@ check_installed_files
 %files -f Slovak.lang Slovak
 %defattr(644,root,root,755)
 
+%files -f Slovenian.lang Slovenian
+%defattr(644,root,root,755)
+
 %files -f Swedish.lang Swedish
+%defattr(644,root,root,755)
+
+%files -f Turkish.lang Turkish
 %defattr(644,root,root,755)
 
 %files -f Ukrainian.lang Ukrainian
