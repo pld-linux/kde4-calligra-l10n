@@ -12,68 +12,68 @@
 Summary:	Calligra suite - international support
 Summary(pl.UTF-8):	Calligra - wsparcie dla wielu języków
 Name:		kde4-calligra-l10n
-Version:	2.8.6
+Version:	2.8.7
 Release:	1
 License:	GPL
 Group:		I18n
 Source0:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-bs-%{version}.tar.xz
-# Source0-md5:	290f526d54d7281d2514ed067b9c910c
+# Source0-md5:	d40b53e9266d0381fd6951daae0fbc69
 Source1:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-ca-%{version}.tar.xz
-# Source1-md5:	7da075702a77c8bcf9243e51b106f230
+# Source1-md5:	42dc9dd95b709ebfcb1f00cf69cf094f
 Source2:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-cs-%{version}.tar.xz
-# Source2-md5:	6227bc09f01cf7f34faaf06d6f306942
+# Source2-md5:	96232bbe66f1ee60a86bcf023670ced8
 Source3:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-da-%{version}.tar.xz
-# Source3-md5:	5ce2fe12b32edf70d8037a1b361b786a
+# Source3-md5:	a8dcfa38b9c3e8ca0eb8fbc68a7b21b8
 Source4:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-de-%{version}.tar.xz
-# Source4-md5:	f8db1a981502f606b966d894a8799b21
+# Source4-md5:	d17be021229e6ccc84582da889abedb8
 Source5:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-el-%{version}.tar.xz
-# Source5-md5:	e12e540fc22282bdc14a4cb6d4bf3658
+# Source5-md5:	aa141334488455d590b01fc6104e7ea8
 Source6:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-es-%{version}.tar.xz
-# Source6-md5:	0eafe501f148a36bc9dae99e62e1e4d8
+# Source6-md5:	743d02e730421d2caa802276f6917a6a
 Source7:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-et-%{version}.tar.xz
-# Source7-md5:	6c72e3f1dcdcc5c1da33eb9924409909
+# Source7-md5:	d275542a37bf6e696123ff52e2c70345
 Source8:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-fi-%{version}.tar.xz
-# Source8-md5:	052997ef78c2f65e8c55380c10f28865
+# Source8-md5:	a135128f4afe4125f4e82c166fa9b17d
 Source9:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-fr-%{version}.tar.xz
-# Source9-md5:	179c4ae228c0a76b9cffcf69c8bb8bc0
+# Source9-md5:	de076e3e38ccc698288420dc719c9357
 Source10:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-gl-%{version}.tar.xz
-# Source10-md5:	6522c4dd0878aee02b61c3f476868f5f
+# Source10-md5:	d8139eb50b743144852e328278d39164
 Source11:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-hu-%{version}.tar.xz
-# Source11-md5:	d4e96354dbc20a2634eccd2364d1840b
+# Source11-md5:	46e06d980692bdd86f114d16ff71187d
 Source12:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-it-%{version}.tar.xz
-# Source12-md5:	b5f536fc33f34ed154c1598cbe6940d2
+# Source12-md5:	e1ec962ac680cd9dce72e48dd9c754e6
 Source13:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-kk-%{version}.tar.xz
-# Source13-md5:	0666f0d7882ac8b9e81eca548e9603e5
+# Source13-md5:	719acbca3e86c5ddc88ab0232d3e973b
 Source14:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-nb-%{version}.tar.xz
-# Source14-md5:	7d77dff42771d094aeb71a87d6b6f589
+# Source14-md5:	2400e204e613a9710a09d57a08eb2631
 Source15:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-nds-%{version}.tar.xz
-# Source15-md5:	03322f628af4b2bced1590e9555a81a7
+# Source15-md5:	a8d94ba46a914a9b6d63fa71a89ecf8a
 Source16:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-nl-%{version}.tar.xz
-# Source16-md5:	624c96055805af8fe9a278c60ffe50d0
+# Source16-md5:	dfe2b5d1ee93ad60c361cfd01b4f2057
 Source17:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-pl-%{version}.tar.xz
-# Source17-md5:	34fd5dadde42c535cece3e9ffb70a616
+# Source17-md5:	ca3546b5449ac81334b9228c88f4172f
 Source18:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-pt-%{version}.tar.xz
-# Source18-md5:	0ef1481ea15a1ae8e9e2aa1b70bc7839
+# Source18-md5:	5c5f0499d26545e26cdd9a8aa21a5928
 Source19:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-pt_BR-%{version}.tar.xz
-# Source19-md5:	104d637ab95d9bffc99ec80f11ad6bd6
+# Source19-md5:	70e9b04b66aa74e836a23c1c606d5280
 Source20:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-ru-%{version}.tar.xz
-# Source20-md5:	830b1aa2406cad1a2ec792293cfae4bd
+# Source20-md5:	4cb22f814b8c00040246b7d3e16fea29
 Source21:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-sk-%{version}.tar.xz
-# Source21-md5:	a3ed4138d02b1e9a79621471d23aeb76
+# Source21-md5:	0a50e809722ad150dba660bd43b75db7
 Source22:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-sv-%{version}.tar.xz
-# Source22-md5:	976464eeff7edace845a10d1b0b11170
+# Source22-md5:	10e5faad6c7ad0b9084978840cc75603
 Source23:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-uk-%{version}.tar.xz
-# Source23-md5:	f174781032238ba12d9d244a2041c9f5
+# Source23-md5:	09011b1829c1eafddb1987080b1e627d
 Source24:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-zh_CN-%{version}.tar.xz
-# Source24-md5:	c01047568eca877d1a8c72aa8892e84b
+# Source24-md5:	ed20dba78078a127feb206afaa0490cc
 Source25:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-zh_TW-%{version}.tar.xz
-# Source25-md5:	c21f6810bbb617d7b33da856e61c640a
+# Source25-md5:	20357723a567fddf2fcf12dd399b88a8
 Source26:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-ca@valencia-%{version}.tar.xz
-# Source26-md5:	7642f2d18956e45e68622a687a0a1453
+# Source26-md5:	867aa2c3351bd67acecad6a0b4642a4c
 Source27:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-ja-%{version}.tar.xz
-# Source27-md5:	eb074a01805019b0d72ac75ade50dbab
+# Source27-md5:	50a3272af6c6a62bf4f5978832b96181
 Source28:	ftp://ftp.kde.org/pub/kde/stable/calligra-%{version}/calligra-l10n/%{orgname}-en_GB-%{version}.tar.xz
-# Source28-md5:	7e741752ac5c2d6609b75dc01ac67763
+# Source28-md5:	7b02333d666f7edfcb00ebf5a34a671b
 BuildRequires:	automoc4
 BuildRequires:	cmake >= 2.8.0
 BuildRequires:	docbook-dtd42-xml
