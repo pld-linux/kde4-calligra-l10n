@@ -13,7 +13,7 @@ Summary:	Calligra suite - international support
 Summary(pl.UTF-8):	Calligra - wsparcie dla wielu języków
 Name:		kde4-calligra-l10n
 Version:	2.9.11
-Release:	1
+Release:	2
 License:	GPL
 Group:		I18n
 Source0: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-bs-%{version}.tar.xz
@@ -85,7 +85,6 @@ BuildRequires:	qt4-qmake
 BuildRequires:	rpmbuild(macros) >= 1.600
 Requires:	kde4-calligra-common = %{version}
 Obsoletes:	kde4-calligra-l10n-Slovenian < %{version}-%{release}
-Obsoletes:	kde4-calligra-l10n-Turkish < %{version}-%{release}
 Obsoletes:	kde4-koffice-l10n
 Obsoletes:	kde4-koffice-l10n-Frisian
 BuildArch:	noarch
@@ -453,19 +452,6 @@ Calligra suite - Russian language support.
 %description Russian -l pl.UTF-8
 Calligra - wsparcie dla języka rosyjskiego.
 
-%package Turkish
-Summary:	Calligra suite - Turkish language support
-Summary(pl.UTF-8):	Calligra - wsparcie dla języka tureckiego
-Group:		I18n
-Requires:	kde4-calligra-common = %{version}
-Obsoletes:	kde4-koffice-l10n-Turkish
-
-%description Turkish
-Calligra suite - Turkish language support.
-
-%description Turkish -l pl.UTF-8
-Calligra - wsparcie dla języka tureckiego.
-
 %package Ukrainian
 Summary:	Calligra suite - Ukrainian language support
 Summary(pl.UTF-8):	Calligra - wsparcie dla języka ukraińskiego
@@ -717,8 +703,8 @@ check_installed_files
 %files -f Swedish.lang Swedish
 %defattr(644,root,root,755)
 
-#%files -f Turkish.lang Turkish
-#%defattr(644,root,root,755)
+%files -f Turkish.lang Turkish
+%defattr(644,root,root,755)
 
 %files -f Ukrainian.lang Ukrainian
 %defattr(644,root,root,755)
