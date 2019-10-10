@@ -13,65 +13,67 @@ Summary:	Calligra suite - international support
 Summary(pl.UTF-8):	Calligra - wsparcie dla wielu języków
 Name:		kde4-calligra-l10n
 Version:	2.9.11
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		I18n
 Source0: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-bs-%{version}.tar.xz
 # Source0-md5:	f87a80d5f9ef18e5bce4f9b546ac54f2
 Source1: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-ca-%{version}.tar.xz
 # Source1-md5:	a2d73c39ee84ee2f69842509da092f0b
-Source2: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-cs-%{version}.tar.xz
-# Source2-md5:	e644cdb5e8694b9dfd1937877d461710
-Source3: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-da-%{version}.tar.xz
-# Source3-md5:	02a50ae334a195845fbd9b58730c8a50
-Source4: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-de-%{version}.tar.xz
-# Source4-md5:	99f7c7354f593147a384850b4f365a8b
-Source5: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-el-%{version}.tar.xz
-# Source5-md5:	6d54da69aa0d5b79f37edae7b8edb726
-Source6: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-en_GB-%{version}.tar.xz
-# Source6-md5:	f3e020a8daefa5f26485e01ffa8a4520
-Source7: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-es-%{version}.tar.xz
-# Source7-md5:	83760e705c0dfeaa2f4f098305da3f79
-Source8: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-et-%{version}.tar.xz
-# Source8-md5:	20a2d9f1ceb5e1b31faee72bf5fb4d0f
-Source9: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-fi-%{version}.tar.xz
-# Source9-md5:	ef1fd56d9871a5235d66083bb5132968
-Source10: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-fr-%{version}.tar.xz
-# Source10-md5:	3042e50532305db27624be2cc4d78394
-Source11: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-gl-%{version}.tar.xz
-# Source11-md5:	f7f539b7a32710502176b0a157aa5057
-Source12: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-hu-%{version}.tar.xz
-# Source12-md5:	90ac8f87fb1f76692e19532d9e7246e6
-Source13: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-it-%{version}.tar.xz
-# Source13-md5:	602972907def3acfd0023fd3019a1512
-Source14: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-ja-%{version}.tar.xz
-# Source14-md5:	5755ce1e4d163fc07de6b4bb2abcb6e2
-Source15: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-kk-%{version}.tar.xz
-# Source15-md5:	89080fa5d2448f84b6c406a5c206261c
-Source16: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-nb-%{version}.tar.xz
-# Source16-md5:	6af6cfbae29929718e37b73f4e574b8a
-Source17: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-nl-%{version}.tar.xz
-# Source17-md5:	7c07d0a8e4722286cd75bd669e141ed2
-Source18: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-pl-%{version}.tar.xz
-# Source18-md5:	3598ca1fdcadbee772bbfbfd2e61836b
-Source19: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-pt-%{version}.tar.xz
-# Source19-md5:	8029eee21ad33758a9b705f1c987d83b
-Source20: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-pt_BR-%{version}.tar.xz
-# Source20-md5:	cf743c38b3bc4d886f3fa709df8aabb9
-Source21: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-ru-%{version}.tar.xz
-# Source21-md5:	23be50c6e72729526fb649a697215e69
-Source22: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-sk-%{version}.tar.xz
-# Source22-md5:	306843e947b62056dca378c5898fd68c
-Source23: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-sv-%{version}.tar.xz
-# Source23-md5:	5058af16b0a81e1087bd2a9226850ce8
-Source24: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-tr-%{version}.tar.xz
-# Source24-md5:	f6808a1b4f35b57b50a2050ce051fe42
-Source25: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-uk-%{version}.tar.xz
-# Source25-md5:	830cb6222edb3ad805ec21a9466f4e81
-Source26: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-zh_CN-%{version}.tar.xz
-# Source26-md5:	c3b5b8c568920fdfe9719b5da524a101
-Source27: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-zh_TW-%{version}.tar.xz
-# Source27-md5:	1d6acdd91f14331b465c2365272d0a2d
+Source2: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-ca@valencia-%{version}.tar.xz
+# Source2-md5:	946784625e39f505330bf9cf9895cd32
+Source3: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-cs-%{version}.tar.xz
+# Source3-md5:	e644cdb5e8694b9dfd1937877d461710
+Source4: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-da-%{version}.tar.xz
+# Source4-md5:	02a50ae334a195845fbd9b58730c8a50
+Source5: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-de-%{version}.tar.xz
+# Source5-md5:	99f7c7354f593147a384850b4f365a8b
+Source6: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-el-%{version}.tar.xz
+# Source6-md5:	6d54da69aa0d5b79f37edae7b8edb726
+Source7: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-en_GB-%{version}.tar.xz
+# Source7-md5:	f3e020a8daefa5f26485e01ffa8a4520
+Source8: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-es-%{version}.tar.xz
+# Source8-md5:	83760e705c0dfeaa2f4f098305da3f79
+Source9: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-et-%{version}.tar.xz
+# Source9-md5:	20a2d9f1ceb5e1b31faee72bf5fb4d0f
+Source10: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-fi-%{version}.tar.xz
+# Source10-md5:	ef1fd56d9871a5235d66083bb5132968
+Source11: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-fr-%{version}.tar.xz
+# Source11-md5:	3042e50532305db27624be2cc4d78394
+Source12: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-gl-%{version}.tar.xz
+# Source12-md5:	f7f539b7a32710502176b0a157aa5057
+Source13: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-hu-%{version}.tar.xz
+# Source13-md5:	90ac8f87fb1f76692e19532d9e7246e6
+Source14: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-it-%{version}.tar.xz
+# Source14-md5:	602972907def3acfd0023fd3019a1512
+Source15: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-ja-%{version}.tar.xz
+# Source15-md5:	5755ce1e4d163fc07de6b4bb2abcb6e2
+Source16: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-kk-%{version}.tar.xz
+# Source16-md5:	89080fa5d2448f84b6c406a5c206261c
+Source17: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-nb-%{version}.tar.xz
+# Source17-md5:	6af6cfbae29929718e37b73f4e574b8a
+Source18: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-nl-%{version}.tar.xz
+# Source18-md5:	7c07d0a8e4722286cd75bd669e141ed2
+Source19: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-pl-%{version}.tar.xz
+# Source19-md5:	3598ca1fdcadbee772bbfbfd2e61836b
+Source20: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-pt-%{version}.tar.xz
+# Source20-md5:	8029eee21ad33758a9b705f1c987d83b
+Source21: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-pt_BR-%{version}.tar.xz
+# Source21-md5:	cf743c38b3bc4d886f3fa709df8aabb9
+Source22: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-ru-%{version}.tar.xz
+# Source22-md5:	23be50c6e72729526fb649a697215e69
+Source23: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-sk-%{version}.tar.xz
+# Source23-md5:	306843e947b62056dca378c5898fd68c
+Source24: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-sv-%{version}.tar.xz
+# Source24-md5:	5058af16b0a81e1087bd2a9226850ce8
+Source25: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-tr-%{version}.tar.xz
+# Source25-md5:	f6808a1b4f35b57b50a2050ce051fe42
+Source26: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-uk-%{version}.tar.xz
+# Source26-md5:	830cb6222edb3ad805ec21a9466f4e81
+Source27: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-zh_CN-%{version}.tar.xz
+# Source27-md5:	c3b5b8c568920fdfe9719b5da524a101
+Source28: https://download.kde.org/Attic/calligra-%{version}/calligra-l10n/calligra-l10n-zh_TW-%{version}.tar.xz
+# Source28-md5:	1d6acdd91f14331b465c2365272d0a2d
 BuildRequires:	automoc4
 BuildRequires:	cmake >= 2.8.0
 BuildRequires:	docbook-dtd42-xml
@@ -517,7 +519,7 @@ Calligra suite - Chinese language support.
 Calligra - wsparcie dla języka chińskiego.
 
 %prep
-%setup -q -c -T %(seq -f '-a %g' 0 27 | xargs)
+%setup -q -c -T %(seq -f '-a %g' 0 28 | xargs)
 
 %build
 for dir in calligra-l10n-*-%{version}; do
@@ -594,6 +596,7 @@ FindLang pt_BR > Brazil_Portuguese.lang
 FindLang ru > Russian.lang
 FindLang sk > Slovak.lang
 FindLang sv > Swedish.lang
+FindLang tr > Turkish.lang
 FindLang uk > Ukrainian.lang
 FindLang zh_CN > Simplified_Chinese.lang
 FindLang zh_TW > Chinese.lang
